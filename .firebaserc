@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fir-1d3ad": {
+      "hosting": {
+        "AmazonClone": [
+          "fir-1d3ad"
+        ]
+      }
+    }
+  }
+}

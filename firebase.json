@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "AmazonClone",
+      "public": "dist/AmazonClone",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

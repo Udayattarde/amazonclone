@@ -1,0 +1,20 @@
+<div class="login">
+    <div class="login_container">
+        <img routerLink="/" class="logo_img"src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png">
+         <div class="login_form">
+             <h1>Sign In</h1>
+             <form action="" [formGroup]="LoginForm">
+                 <h5>Email</h5>
+                 <input type="email" formControlName="email">
+                 <h5>Password</h5>
+                 <input type="password" formControlName="password">
+                 <button class="sign_in_btn"(click)="SignIn()">Sign In </button>
+                 <div class="termsNcond">
+                <input type="checkbox">
+                <p class="login_terms">By  clicking you accept terms and conditions</p>
+                </div>
+                 <button class="create_account_btn" (click)="CreateAccount()">Create Account</button>
+             </form>
+         </div>
+    </div>
+</div>

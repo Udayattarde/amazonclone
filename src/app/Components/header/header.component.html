@@ -1,0 +1,117 @@
+<div class="header">
+    <nav class="header_top">
+      <div class="header_menu">
+        <div class="header-menu_icon">
+          <mat-icon>menu</mat-icon>
+  
+        </div>
+        <img routerLink="/" class="header_menu_logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" class="header_menu_logo" alt="">
+        <div class="header_menu_searchbar">
+           <div class="dropdown">
+            <div   (click)="toggledrop()" class="default_dropdown">{{dropdownValue}}
+            </div>
+          <!-- <select class="show">
+
+            <option>mobile</option>
+            <option>mobile</option>
+            <option>mobile</option>
+            <option>mobile</option>
+            <option>mobile</option>
+            <option>mobile</option>
+            <option>mobile</option>
+            <option>mobile</option>
+            <option>mobile</option>
+            <option>mobile</option>
+
+          </select> 
+          <div class="show" *ngIf="Showdropown">
+             <ul>
+              <li (click)="onclick($event)">mobile</li>
+              <li>computers</li>
+              <li>printers</li>
+              <li>cammera</li>
+              <li>mobile</li>
+              <li>computers</li>
+              <li>printers</li>
+              <li>cammera</li>
+              <li>mobile</li>
+              <li>computers</li>
+              <li>printers</li>
+              <li>cammera</li>
+              <li>mobile</li>
+              <li>computers</li>
+              <li>printers</li>
+              <li>cammera</li>
+              <li>mobile</li>
+              <li>computers</li>
+              <li>printers</li>
+              <li>cammera</li>
+              <li>mobile</li>
+              <li>computers</li>
+              <li>printers</li>
+              <li>cammera</li>
+            </ul> 
+          </div>    -->
+    
+          <select size="1">
+            <option>fdfdf</option>
+            <option>fdffgfgfffgdf</option>
+             <option>fdfdf</option> 
+             <option>fdfdf</option> 
+             <option>fdfdf</option>
+             <option>fdfdf</option>
+            <option>fdfdf</option>
+             <option>fdfdf</option> 
+             <option>fdfdf</option> 
+             <option>fdfdf</option>
+
+             <option>fdfdf</option>
+            <option>fdfdf</option>
+             <option>fdfdf</option> 
+             <option>fdfdf</option> 
+             <option>fdfdf</option>
+          </select>
+        
+           
+
+         </div>
+       
+
+          <input type="text" class="header_menu_input">
+         <div class="header_menu_searchbar_icon">
+          <mat-icon>search</mat-icon>
+        </div> 
+  
+        </div>
+
+      
+  
+        <div   class="header_menu_sigin">
+          <span (click)="signOut()" class="header_menu_top_item" *ngIf="authService.isSignIn()">Hello,{{authService.getUser()}}</span>
+           <span routerLink="/login" class="header_menu_top_item"  *ngIf="!authService.isSignIn()">Hello, Sign In</span>
+          <span class="header_menu_bottom_item">Accounts & Lists</span>
+         </div>
+  
+        <div  routerLink="/login" class="header_menu_sigin">
+             <span class="header_menu_top_item">Returns</span>
+             <span class="header_menu_bottom_item">& Orders</span>
+        </div>
+  
+        <div routerLink="/checkout" class="header_menu_cart">
+          <mat-icon>shopping_cart</mat-icon>
+          <p class="header_cart_number">{{service.getShoppingcartLength()}}</p>
+        </div>
+  
+  
+      </div>
+  
+    </nav>
+   
+    <nav class="header_bottom">
+      <div class="header_bottom_location">
+        <span class="header_left_line_one">Delivered To</span>
+        <span clss="header_left_line_two">Cannada</span>
+      </div>
+  
+    </nav>
+  </div>

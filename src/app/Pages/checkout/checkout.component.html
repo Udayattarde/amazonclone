@@ -1,0 +1,16 @@
+<div class="check_out">
+    <div class="left-section">
+        <div class="checkout_empty" *ngIf="service.getShoppingcartLength()==0">
+            <p>Your shopping basket is empty</p>
+            <p>No items in the basket</p>
+        </div>
+        <div class="not_empty" *ngIf="service.getShoppingcartLength() !==0">
+            <app-checkoutproducts [checkout_products]="items" (delete)="refreshAfteDelete($event)"></app-checkoutproducts>
+        </div>
+
+    </div>
+    <div class="right-section">
+        <app-checkoutsubtotal></app-checkoutsubtotal>
+
+    </div>
+</div>
